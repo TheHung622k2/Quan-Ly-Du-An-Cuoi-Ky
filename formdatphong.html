@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RunchTy hotels & resorts</title>
+   <link rel="shortcut icon" type="image/png" href="images/hotellogo2.png"/>
+   <!-- link swiper -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="home.css">
+   <!-- <custom emailjs link -->
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+   (function(){
+      emailjs.init("eJHp87Q7ME-gl6ukN");
+   })();
+   </script>
+</head>
+<body>
+
+<!-- header section starts  -->
+<section class="header">
+   <div class="flex">
+      <a href="index.html" class="logo"> RunchTy Hotels And Resorts</a>
+      <a href="#availability" class="btn">check availability</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+   <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#reviews">Reviews</a>
+   </nav>
+</section>
+<!-- header section ends -->
+
+<!-- home section starts  -->
+<section class="home" id="home">
+   <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpg" alt="">
+            <div class="flex">
+               <h3>luxurious rooms</h3>
+               <a href="#availability" class="btn">check availability</a>
+            </div>
+         </div>
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="">
+            <div class="flex">
+               <h3>food and beverage</h3>
+               <a href="#reservation" class="btn">make a reservation</a>
+            </div>
+         </div>
+         <div class="box swiper-slide">
+            <img src="images/home-img-3.jpg" alt="">
+            <div class="flex">
+               <h3>luxurious halls</h3>
+               <a href="#contact" class="btn">contact us</a>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+   </div>
+</section>
+<!-- home section ends -->
+
+<!-- availability section starts  -->
+<section class="availability" id="availability">
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>customer's name <span>*</span></p>
+            <input type="text" id="cus_name" placeholder="Mr/Ms/Mrs Name" class="input" required>
+         </div>
+         <div class="box">
+            <p>email <span>*</span></p>
+            <input type="text" id="email_id" placeholder="abc@gmail.com" class="input" required>
+         </div>
+         <div class="box">
+            <p>number</p>
+            <input type="text" id="number" placeholder="number random" class="input" required>
+         </div>
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" id="checkin_date" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" id="checkout_date" class="input" required>
+         </div>
+         <div class="box"></div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" id="amount_1" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" id="amount_2" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" id="rooms" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>type of rooms <span>*</span></p>
+            <select name="type of rooms" class="input" id="type" required>
+               <option value="1">Single Rooms</option>
+               <option value="2">Twin or Double Rooms</option>
+               <option value="3">Studio Rooms</option>
+               <option value="4">Luxurious Rooms</option>
+               <option value="5">Rooms with a Beach View</option>
+               <option value="6">Suites</option>
+               <option value="7">Presidential Suites</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn" onclick="sendMail()">
+   </form>
+</section>
+<!-- availability section ends -->
