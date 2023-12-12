@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RunchTy hotels & resorts</title>
+   <link rel="shortcut icon" type="image/png" href="images/hotellogo2.png"/>
+   <!-- link swiper -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="home.css">
+   <!-- <custom emailjs link -->
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+   (function(){
+      emailjs.init("eJHp87Q7ME-gl6ukN");
+   })();
+   </script>
+</head>
+<body>
+<section class="contact" id="contact">
+   <div class="row">
+      <form action="" method="post">
+         <h3>send us a message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="Enter your name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="Enter your email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Enter your number" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="Enter your message" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+      <div class="faq">
+         <h3 class="title">frequently asked questions</h3>
+         <div class="box active">
+            <h3>How to cancel ?</h3>
+            <p>You can cancel from the app by scroll through details to 'Cancel Reservation' link at the bottom and click 'OK'.</p>
+         </div>
+         <div class="box">
+            <h3>What are payment methods ?</h3>
+            <p>Guests can pay for their stay at hotel with Runch Honors Points, Major credit / Debit card.</p>
+         </div>
+         <div class="box">
+            <h3>How to claim coupons codes ?</h3>
+            <p>You can claim coupons codes on their app with more promotions.</p>
+         </div>
+         <div class="box">
+            <h3>What are the age requirements ?</h3>
+            <p>You can click the 'Hotel details' link. Scroll to the bottom of the pop-up to click the 'Hotel website' link and expand 
+               the 'Additional hotel policies' section will be show and minimum age to register will be listed. You can also call the hotel
+               directly to ask about minimum ages and identification needed.</p>
+         </div>
+      </div>
+   </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="home.js"></script>
+
+
+
+</body>
+</html>
